@@ -36,7 +36,7 @@ public class Car {
         Car myCar = new Car();
         myCar.color = "Red";
         myCar.model = "Tesla";
-        System.out.println("Car model: " + myCar.model);
+        System.out.println("Cat model: " + myCar.model);
     }
 }
 ```
