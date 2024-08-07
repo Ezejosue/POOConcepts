@@ -1,7 +1,7 @@
 package poo.concepts.models;
 
 public class Person {
-    static int personCounter = 0;
+    private static int personCounter = 0;
     private Integer personId;
     private String name;
     private String lastname;
