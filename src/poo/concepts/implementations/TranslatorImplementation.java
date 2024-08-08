@@ -8,7 +8,7 @@ public class TranslatorImplementation {
 
         //Translator translator = new Translator(); This line will throw an error because the interface Translator is abstract
 
-        Translator translator = new English(); //We can create an object of the class that implements the interface 
+        Translator translator = new English(); //We can create an object of the class that implements the interface
         translator.initializeTranslator();
         translator.translate();
     }
