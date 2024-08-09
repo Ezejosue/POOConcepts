@@ -13,11 +13,35 @@ public class Arithmetic {
     }
 
     public void sum() {
-        System.out.println("The sum is: " + (operator1 + operator2));
+        try {
+            System.out.println("The sum is: " + (operator1 + operator2));
+        } catch (ArithmeticException e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
     }
 
     public void subtraction() {
-        System.out.println("The subtraction is: " + (operator1 - operator2));
+        try {
+            System.out.println("The subtraction is: " + (operator1 - operator2));
+        } catch (ArithmeticException e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
+    }
+
+    public void multiplication() {
+        try {
+            System.out.println("The multiplication is: " + (operator1 * operator2));
+        } catch (ArithmeticException e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
+    }
+
+    public void division() {
+        try {
+            System.out.println("The division is: " + (operator1 / operator2));
+        } catch (ArithmeticException e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
     }
 
     public int getOperator1() {
