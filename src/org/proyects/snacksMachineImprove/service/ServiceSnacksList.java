@@ -1,9 +1,11 @@
-package org.proyects.snacksMachine.models;
+package org.proyects.snacksMachineImprove.service;
+
+import org.proyects.snacksMachineImprove.domain.Snack;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Snacks {
+public class ServiceSnacksList implements IServiceSnacks {
     private static final List<Snack> snacks; // This is a static variable, it is shared by all instances of the class
 
     // This is a static block, it is executed when the class is loaded
@@ -17,11 +19,13 @@ public class Snacks {
         snacks.add(new Snack("Gum", 0.25));
     }
 
-    public static void addSnack(Snack snack) { // This is a static method for adding a snack
+    @Override
+    public void addSnack(Snack snack) { // This is a static method for adding a snack
         snacks.add(snack);
     }
 
-    public static void showSnacks() { // This is a static method for showing the snacks
+    @Override
+    public void showSnacks() { // This is a static method for showing the snacks
         var snacksInventory = "";
         for (var snack : snacks) {
             snacksInventory += snack.toString() + "\n";
@@ -31,7 +35,8 @@ public class Snacks {
         System.out.println(snacksInventory);
     }
 
-    public static List<Snack> getSnacks() { // This is a static method for getting the snacks
+    @Override
+    public List<Snack> getSnacks() { // This is a static method for getting the snacks
         return snacks;
     }
 }

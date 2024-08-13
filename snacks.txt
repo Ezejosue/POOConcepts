@@ -1,0 +1,5 @@
+1, Chocolate, 1.5
+2, Chips, 1.0
+3, Soda, 1.0
+4, Water, 0.5
+5, Gummy, 0.75
